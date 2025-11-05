@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 
@@ -30,7 +31,7 @@ export default function Beranda_Menu() {
           initial={{ y: 400 }}
           animate={{ y: -280 }}
           transition={{ delay: 2, type: 'spring', stiffness: 60 }}
-        ><span className="rubik-bubbles-regular text-[55px] text-[#CBF3BB] hover:scale-102 stroke-black-500">Credits</span></motion.button>
+        ><span className="rubik-bubbles-regular text-[55px] text-[#CBF3BB] hover:scale-102 stroke-black-500"><Link to="/credits">credits</Link></span></motion.button>
       </div>
 
 

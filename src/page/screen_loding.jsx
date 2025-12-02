@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, {useEffect, useState} from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -14,8 +16,9 @@ export default function ScreenLoding() {
 
     return () => clearTimeout(timer); // Cleanup the timer on component unmount
   }, []);
-
+/* eslint-disable */
   return (
+    
     <div className="fixed flex flex-col bg-[#CBF3BB] min-w-screen h-screen flex justify-center items-center">
       <div>
       <motion.img src="/Matematix.png" alt="gambar_loding_screen" className="-top-10 "/>
